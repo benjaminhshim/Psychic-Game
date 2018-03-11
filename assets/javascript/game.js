@@ -49,6 +49,8 @@ console.log('Computer: ' + computerGuess);
             guessesLeft = 9;
             alreadyGuessed = [];
             computerGuess = alphabet[Math.floor(Math.random() * alphabet.length)];
+            console.log('You win! Computer: ' + computerGuess);
+
         }
 
     // IF guessesLeft REACHES 0:
@@ -61,6 +63,8 @@ console.log('Computer: ' + computerGuess);
             guessesLeft = 9;
             alreadyGuessed = [];
             computerGuess = alphabet[Math.floor(Math.random() * alphabet.length)];
+            console.log('You lose! Computer: ' + computerGuess);
+
         }
 
     // PRINT TO DOCUMENT
