@@ -1,8 +1,17 @@
+body {
+    background: black;
+}
+
 h1 {
     font-size: 36px;
     font-style: italic;
     font-weight: 900;
     margin-top: 20px;
+    width: 350px;
+    margin: 0 auto;
+    padding: 10px;
+    background: red;
+
 }
 
 .container {
@@ -16,8 +25,8 @@ h1 {
 
 p {
     color: white;
-    font-style: italic;
-    font-weight: 900;
+    font-family: monospace;
+    font-size: 16px;
 
 }
 
@@ -26,8 +35,7 @@ p {
     width: 75%;
     margin: 0 auto;
     z-index: 99;
-    background: red;
-    border: 3px solid white;
+    background: black;
     z-index: 99;
     position: relative;
     margin-top: 40px;
