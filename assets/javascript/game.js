@@ -34,7 +34,7 @@ console.log('Computer: ' + computerGuess);
             // REPEATED LETTERS MAY NOT BE COUNTED IN alreadyGuessed
         // SUBTRACT guessesLeft BY 1
         // *userGuess MUST BE A LETTER, NOT ANY OTHER KEY*
-        if (userGuess !== computerGuess && alreadyGuessed.indexOf(userGuess) && alphabet.indexOf(userGuess) >= 0) {
+        if (userGuess !== computerGuess && alreadyGuessed.indexOf(userGuess) < 0 && alphabet.indexOf(userGuess) >= 0) {
             alreadyGuessed[alreadyGuessed.length] = userGuess;
             guessesLeft--;
         }
@@ -64,10 +64,10 @@ console.log('Computer: ' + computerGuess);
         }
 
     // PRINT TO DOCUMENT
-        document.getElementById('wins').innerHTML = 'Wins: ' + wins;
-        document.getElementById('losses').innerHTML = 'Losses: ' + losses;
-        document.getElementById('alreadyGuessed').innerHTML = 'Your guesses so far: ' + alreadyGuessed.join(' ');
-        document.getElementById('guessesLeft').innerHTML = 'Guesses Left: ' + guessesLeft;
+        document.getElementById('wins').innerHTML = 'wins: ' + wins;
+        document.getElementById('losses').innerHTML = 'losses: ' + losses;
+        document.getElementById('alreadyGuessed').innerHTML = 'your guesses so far: ' + alreadyGuessed.join(' ');
+        document.getElementById('guessesLeft').innerHTML = 'guesses left: ' + guessesLeft;
 
     } //end onkeyup function
 
