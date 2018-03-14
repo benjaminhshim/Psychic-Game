@@ -19,6 +19,8 @@ var userGuess;
 
 // CREATE A VARIABLE THAT STORE'S COMPUTER'S RANDOM LETTER
 var computerGuess = alphabet[Math.floor(Math.random() * alphabet.length)];
+
+// LOG COMPUTER'S GUESS INTO CONSOLE FOR TESTING PURPOSES
 console.log('Computer: ' + computerGuess);
 
 // LISTEN FOR KEY PRESS EVENT
